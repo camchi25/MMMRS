@@ -1,0 +1,62 @@
+
+<!-- saved from url=(0091)file:///C:/Users/cameron/Downloads/temp_bootcamp_repos/mysite/mysite/templates/project.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <style>
+    h1 {color:blue;}
+    p {font-size:16px;}
+    ul {border: dashed red;}
+
+    .grid-container {
+        display: grid;
+        grid-template-rows: 100px 100px 100px;
+        grid-template-columns: 100px 100px 100px;
+        grid-gap: 5px;
+    }
+    .grid-header{
+        background: aliceblue;
+        border: black 5px solid;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    .grid-nav {
+        background: aliceblue;
+        border: black 5px solid;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 10;
+    }
+    .grid-desc {
+        background: aliceblue;
+        border: black 5px solid;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 10;
+    }
+  </style>
+</head><body>
+    <h1>Manual Music Mashup Recommendation System</h1>
+    <p>Insert songs and receive songs that would work well with it!</p>
+    <ul>
+    	<li>Train a model to make it fit to your standards</li>
+        <li>Return songs closest to your song</li>
+        <li>Customize options such as genres and artists to find new or old songs</li>
+    </ul>
+    <div class="grid-container">
+        <div class="grid-header">
+    <form method="POST">
+        <input name="text">
+<input type="submit">
+    </form>
+</div>
+        <div class="grid-nav">
+<p> {{ msg }} </p>
+</div>
+        <div class="grid-desc">
+    <img src="./project_files/graph.png" alt="Model predictions">
+    <img src="./project_files/graph2.png" alt="Top songs on graph">
+</div>
+</div></body></html>
