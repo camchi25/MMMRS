@@ -1,7 +1,7 @@
 # MMMRS
 First use of linear-regression model to find songs that mash-up well with each other
 
-#####
+## YOU MUST UNZIP THE DATA.ZIP IN A FILE CALLED "data"
 
 MANUAL MUSIC MASHUP RECOMMENDATION SYSTEM
 
